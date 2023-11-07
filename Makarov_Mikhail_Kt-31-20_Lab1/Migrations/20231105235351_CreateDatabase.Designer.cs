@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Makarov_Mikhail_Kt_31_20_Lab1.Migrations
 {
     [DbContext(typeof(MakarovDbContext))]
-    [Migration("20231105224522_CreateDatabase")]
+    [Migration("20231105235351_CreateDatabase")]
     partial class CreateDatabase
     {
         /// <inheritdoc />

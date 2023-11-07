@@ -7,8 +7,8 @@ namespace Makarov_Mikhail_Kt_31_20_Lab1.Database
     public class MakarovDbContext: DbContext 
 
     {
-        DbSet<Student> Students { get; set; }
-        DbSet<Group> Groups { get; set; }
+        internal DbSet<Student> Students { get; set; }
+        internal DbSet<Group> Groups { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -15,7 +15,7 @@ namespace Makarov_Mikhail_Kt_31_20_Lab1.Migrations
                 name: "ct_group",
                 columns: table => new
                 {
-                    group_id = table.Column<int>(type: "integer", nullable: false, comment: "Идентификатор записи группы")
+                    group_id = table.Column<int>(type: "integer", nullable: true, comment: "Идентификатор записи группы")
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     c_group_groupname = table.Column<string>(type: "varchar", maxLength: 100, nullable: false, comment: "Название группы")
                 },
@@ -33,7 +33,7 @@ namespace Makarov_Mikhail_Kt_31_20_Lab1.Migrations
                     c_student_firstname = table.Column<string>(type: "varchar", maxLength: 100, nullable: false, comment: "Имя студента"),
                     c_student_lastname = table.Column<string>(type: "varchar", maxLength: 100, nullable: false, comment: "Фамилия студента"),
                     c_student_middlename = table.Column<string>(type: "varchar", maxLength: 100, nullable: false, comment: "Отчество студента"),
-                    c_student_group_id = table.Column<int>(type: "int4", nullable: false, comment: "Идентификатор группы")
+                    c_student_group_id = table.Column<int>(type: "int4", nullable: true, comment: "Идентификатор группы")
                 },
                 constraints: table =>
                 {

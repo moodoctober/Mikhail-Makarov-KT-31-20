@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Makarov_Mikhail_Kt-31-20_Lab1", "Makarov_Mikhail_Kt-31-20_Lab1\Makarov_Mikhail_Kt-31-20_Lab1.csproj", "{49B49948-FE9A-43D1-A607-7BB14475D56E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Makarov_Mikhail_Kt-31-20_Lab1", "Makarov_Mikhail_Kt-31-20_Lab1\Makarov_Mikhail_Kt-31-20_Lab1.csproj", "{49B49948-FE9A-43D1-A607-7BB14475D56E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mikhail_Makarov_KT-31-20.Tests", "Mikhail_Makarov_KT-31-20.Tests\Mikhail_Makarov_KT-31-20.Tests.csproj", "{3F1F568A-DE67-44DC-AFBD-1BEF0528E1CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{49B49948-FE9A-43D1-A607-7BB14475D56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49B49948-FE9A-43D1-A607-7BB14475D56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49B49948-FE9A-43D1-A607-7BB14475D56E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F1F568A-DE67-44DC-AFBD-1BEF0528E1CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1F568A-DE67-44DC-AFBD-1BEF0528E1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1F568A-DE67-44DC-AFBD-1BEF0528E1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1F568A-DE67-44DC-AFBD-1BEF0528E1CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
