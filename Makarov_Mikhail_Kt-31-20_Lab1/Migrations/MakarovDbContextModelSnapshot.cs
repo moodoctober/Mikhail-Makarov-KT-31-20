@@ -35,13 +35,13 @@ namespace Makarov_Mikhail_Kt_31_20_Lab1.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar")
-                        .HasColumnName("c_group_groupname")
+                        .HasColumnName("c_group_name")
                         .HasComment("Название группы");
 
                     b.HasKey("GroupId")
-                        .HasName("pk_ct_group_group_id");
+                        .HasName("pk_cd_group_group_id");
 
-                    b.ToTable("ct_group", (string)null);
+                    b.ToTable("cd_group", (string)null);
                 });
 
             modelBuilder.Entity("Makarov_Mikhail_Kt_31_20_Lab1.Models.Student", b =>
@@ -63,7 +63,7 @@ namespace Makarov_Mikhail_Kt_31_20_Lab1.Migrations
 
                     b.Property<int>("GroupId")
                         .HasColumnType("int4")
-                        .HasColumnName("c_student_group_id")
+                        .HasColumnName("f_group_id")
                         .HasComment("Идентификатор группы");
 
                     b.Property<string>("LastName")
@@ -81,11 +81,11 @@ namespace Makarov_Mikhail_Kt_31_20_Lab1.Migrations
                         .HasComment("Отчество студента");
 
                     b.HasKey("StudentId")
-                        .HasName("pk_ct_student_student_id");
+                        .HasName("pk_cd_student_student_id");
 
-                    b.HasIndex(new[] { "GroupId" }, "idx_ct_student_fk_f_group_id");
+                    b.HasIndex(new[] { "GroupId" }, "idx_cd_student_fk_f_group_id");
 
-                    b.ToTable("ct_student", (string)null);
+                    b.ToTable("cd_student", (string)null);
                 });
 
             modelBuilder.Entity("Makarov_Mikhail_Kt_31_20_Lab1.Models.Student", b =>

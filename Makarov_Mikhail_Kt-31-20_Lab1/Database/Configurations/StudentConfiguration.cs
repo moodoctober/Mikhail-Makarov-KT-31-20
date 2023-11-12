@@ -7,7 +7,7 @@ namespace Makarov_Mikhail_Kt_31_20_Lab1.Database.Configurations
 {
     public class StudentConfiguration : IEntityTypeConfiguration<Student>
     {
-        private const string TableName = "ct_student";
+        private const string TableName = "cd_student";
         public void Configure(EntityTypeBuilder<Student> builder)
         {
             builder.HasKey(p => p.StudentId).HasName($"pk_{TableName}_student_id");
@@ -23,8 +23,9 @@ namespace Makarov_Mikhail_Kt_31_20_Lab1.Database.Configurations
             builder.Property(s => s.MiddleName).IsRequired().HasColumnName("c_student_middlename")
                 .HasColumnType(ColumnType.String).HasMaxLength(100).HasComment("Отчество студента");
 
-            builder.Property(s => s.GroupId).IsRequired().HasColumnName("c_student_group_id")
-               .HasColumnType(ColumnType.Int).HasComment("Идентификатор группы");
+            builder.Property(s => s.GroupId).IsRequired().HasColumnName("f_group_id")
+                .HasColumnType(ColumnType.Int)
+                .HasComment("Идентификатор группы");
 
             builder.HasOne(s => s.Group)
                    .WithMany()

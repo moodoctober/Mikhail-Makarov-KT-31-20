@@ -17,7 +17,7 @@ namespace Mikhail_Makarov_KT_31_20.Tests
             public string? GroupName { get; set; }
             public bool IsValidGroupName()
             {
-                return Regex.Match(GroupName, @"/\D*-\d*-\d\d/g").Success;
+                return Regex.Match(GroupName, @"\D*-\d*-\d\d").Success;
             }
         }
     }
